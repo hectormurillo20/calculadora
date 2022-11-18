@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculadora.MainPage">
+
+    <StackLayout>
+        <Grid Grid.Row="0">
+            <StackLayout Orientation="Vertical" HorizontalOptions="EndAndExpand" Margin="20,0" VerticalOptions="CenterAndExpand">
+                <Label x:Name="label_resultado" HorizontalOptions="EndAndExpand" Text="0" TextColor="White" FontSize="50"/>
+            </StackLayout>
+        </Grid>
+        <Grid Grid.Row="1">
+            <StackLayout Orientation="Vertical" Margin="11">
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btn_ac" Text="AC" HorizontalOptions="StartAndExpand" BackgroundColor="DarkGray" TextColor="White" WidthRequest="275" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_division" Text="/" HorizontalOptions="Start" BackgroundColor="Orange" TextColor="White" Clicked="btn_clicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btn_7" Text="7" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_8" Text="8" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_9" Text="9" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_multiplicar" Text="X" HorizontalOptions="Start" BackgroundColor="Orange" TextColor="White" Clicked="btn_clicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btn_4" Text="4" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_5" Text="5" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_6" Text="6" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_resta" Text="-" HorizontalOptions="Start" BackgroundColor="Orange" TextColor="White" Clicked="btn_clicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btn_1" Text="1" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_2" Text="2" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_3" Text="3" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_suma" Text="+" HorizontalOptions="Start" BackgroundColor="Orange" TextColor="White" Clicked="btn_clicked"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                    <Button x:Name="btn_0" Text="0" HorizontalOptions="Start" BackgroundColor="DarkGray" TextColor="White" WidthRequest="275" Clicked="btn_clicked"/>
+                    <Button x:Name="btn_igual" Text="=" HorizontalOptions="Start" BackgroundColor="Orange" TextColor="White" Clicked="btn_clicked"/>
+                </StackLayout>
+
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
